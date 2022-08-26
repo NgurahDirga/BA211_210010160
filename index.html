@@ -1,56 +1,96 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Belajar Bootstrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- <h1>Hello, world!</h1> -->
-    <nav class="navbar navbar-expand-lg navbar navbar-dark" style="background-color: #7f1d9f;">
-        <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
-                </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="gambar.html">Gambar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="formulir.html">Formulir</a>
-                </li>
-            </ul>
-            </div>
+<html>
+    <head>
+    <title>Project</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(0, 240, 212);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            max-width: 1100px;
+            width: 100%;
+            padding: 40px 15px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
+            background-color:aqua;
+        }
+        .header {
+            margin: 30px 0;
+            overflow: hidden;
+        }
+        .header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+        .gallery {
+            margin: 50px 0;
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr ;
+            grid-gap: 25px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 320px;
+            object-fit: cover;
+            border: 1px solid #eee;
+            box-shadow: 1px 2px 3px  #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        .footer {
+            margin: 40px 0;
+            overflow: hidden;
+        }
+        .footer h2 {
+            padding: 15px 0;
+            border-bottom: 2px solid #222;
+            display: inline-block;
+        }
+        .social svg {
+            max-width: 30px;   
+        }
+        .social a {
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            border-radius: 100%;
+        }
+        .social a.ig {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="gambar/logo-ukm.png" alt="">
+            <h1>Pengurus Progress</h1>
+            <p>This is our gallery</p>
         </div>
-      </nav>
-      <div class="container">
-          <br>
-        <h3 class="text-center"> Selamat Datang</h3>
-        <br>
-        <div class="row">
-            <div class="col-2">
-                <img src="gambar/saya.JPG" alt="" width="128px">
-            </div>
-            <div class="col-10">Halo temen temen, terima kasih yaa sudah mengunjungi website saya, sebelumnya saya perkenalan dulu ya, nama saya I Gusti Ngurah Putu Dirgayasa saya kuliah di ITB Stikom Bali mengambil jurusan sistem komputer, saya tinggal di Tabanan, umur saya saat ini adalah 19 tahun, mungkin itu saja yang bisa saya beri tahu tentang diri saya, mungkin saya akan menambahkan tulisan lorem biar kelihatannya lebih panjang yaa hehe, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa laudantium minima, repudiandae eos earum quis quod consequatur autem molestiae quasi magni aliquid atque error eum maxime ea asperiores quia dolor!?</div>
+        <div class="gallery">
+            <img src="gambar/e.jpg" alt="">
+            <img src="gambar/b.jpg" alt="">
+            <img src="gambar/a.jpg" alt="">
+            <img src="gambar/c.jpg" alt="">
+            <img src="gambar/d.jpg" alt="">
+            <img src="gambar/f.jpg" alt="">
         </div>
-        <br>
-        <h4>Riwayat Pendidikan</h4>
-        <ul id="dik">
-            <li><a href="https://www.google.co.id/maps/place/TK+WIDYA+SWASTIKA/@-8.5834755,115.0940491,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd23921cf15093d:0x4258a58b672ea926!8m2!3d-8.5834734!4d115.0962151?hl=en&authuser=0">2009-2010 TK WIDYA SWASTIKA</a></li>
-            <li><a href="https://www.google.co.id/maps/place/SD+2+Bengkel/@-8.5834866,115.0952204,19z/data=!3m1!4b1!4m5!3m4!1s0x2dd239fdbfb910db:0x8f8a3da3c28b502e!8m2!3d-8.5834884!4d115.0957674?hl=en&authuser=0"> 2010-2016 SD NEGERI 2 BENGKEL</a></li>
-            <li><a href="https://www.google.co.id/maps/place/SMP+Negeri+2+Kediri/@-8.5726175,115.1051173,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd23a1cbe3c0f51:0xd66f867ad7a8c67d!8m2!3d-8.572617!4d115.1073002?hl=en&authuser=0">2016-2018 SMP NEGERI 2 KEDIRI</a></li>
-            <li><a href="https://www.google.co.id/maps/place/SMAN+1+Kediri,+Tabanan/@-8.5474497,115.142892,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd23bb397f31a77:0x804d7796d8a0aafa!8m2!3d-8.547455!4d115.1450807?hl=en&authuser=0"> 2018-2021 SMA NEGERI 1 KEDIRI</a></li>
-        </ul>
-    </div>
+        <div class="footer">
+            <h2>Contact Us</h2>
+            <div class="social">
+                <a class="ig" href="#instagram"><img src="gambar/ig.png" alt=""></a>
+                <a class="ig" href="#twitter"><img src="gambar/twitter.png" alt=""></a>
+                <a class="ig" href="#telegram"><img src="gambar/tele.png" alt=""></a>
+            </div>
 
-    <!-- JAVASCRIPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- JAVASCRIPT BOOTSTRAP -->
+        </div>
+    </div>
 </body>
 </html>
